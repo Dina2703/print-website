@@ -1,7 +1,7 @@
 import React from "react";
 
 function Catalog() {
-  return <div>Catalog page</div>;
+  return <div>Products page</div>;
 }
 
 export default Catalog;
