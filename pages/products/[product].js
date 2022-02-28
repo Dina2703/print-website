@@ -1,7 +1,12 @@
-import React from "react";
+import { useRouter } from "next/router";
 
 function Product() {
-  return <div>This is a dynamic route for a each product info</div>;
+  const router = useRouter();
+  return (
+    <div>
+      This is a dynamic route for a each product info {router.query.product}
+    </div>
+  );
 }
 
 export default Product;
