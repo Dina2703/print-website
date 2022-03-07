@@ -1,3 +1,4 @@
+import { Typography } from "@material-ui/core";
 import Link from "next/link";
 
 const products = [
@@ -11,7 +12,9 @@ function Catalog() {
   return (
     <div>
       <h4>Products page</h4>
-
+      <Typography variant="h5" color="secondary" align="center">
+        Typography MUI
+      </Typography>
       {products.map((product) => {
         return (
           <div key={product.name}>
