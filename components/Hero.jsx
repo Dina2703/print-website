@@ -10,7 +10,7 @@ const Hero = ({ imgSrc, imgAlt, title, subtitle }) => {
       container
       sx={{
         position: "relative",
-        height: "100vh",
+        height: "40vh",
         width: "100vw",
         overflow: "hidden",
         zIndex: -100,
@@ -34,31 +34,17 @@ const Hero = ({ imgSrc, imgAlt, title, subtitle }) => {
           alignItems="center"
         >
           <Typography
-            variant="h1"
+            variant="h2"
             align="center"
             gutterBottom
             sx={{
               color: "secondary.main",
-              fontWeight: 400,
+              fontWeight: 500,
+              letterSpacing: 2,
             }}
           >
             {title}
           </Typography>
-          <Typography
-            component="p"
-            variant="h3"
-            align="center"
-            color="common.white"
-            sx={{
-              mb: 10,
-            }}
-          >
-            {subtitle}
-          </Typography>
-          <Typography component="p" variant="h6" color="secondary" gutterBottom>
-            Scroll
-          </Typography>
-          <ArrowDownward fontSize="large" color="secondary" />
         </Grid>
       </Grid>
     </Grid>

@@ -15,11 +15,11 @@ import BackToTop from "./BackToTop";
 const Offset = styled("div")(({ theme }) => theme.mixins.toolbar);
 
 export const navLinks = [
-  { title: `home`, path: `/` },
-  { title: `about us`, path: `/about-us` },
-  { title: `menu`, path: `/menu` },
-  { title: `gallery`, path: `/gallery` },
-  { title: `contact`, path: `/contact` },
+  { title: `главная`, path: `/` },
+  { title: `о нас`, path: `/about-us` },
+  { title: `прайс-лист`, path: `/menu` },
+  { title: `продукция`, path: `/gallery` },
+  { title: `контакты`, path: `/contact` },
 ];
 
 const Header = () => {
@@ -50,7 +50,7 @@ const Header = () => {
                         component="span"
                         gutterBottom
                       >
-                        Brand
+                        Yasmina Print
                       </Typography>
                     </Grid>
                   </Grid>

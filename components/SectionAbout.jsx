@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 
 const SectionAbout = () => {
   return (
-    <Container component="section" maxWidth="md" sx={{ mb: 15 }}>
+    <Container component="section" maxWidth="md" sx={{ mb: 10 }}>
       <Grid container spacing={3}>
         <Grid item xs={12} sm={6}>
           <Image
