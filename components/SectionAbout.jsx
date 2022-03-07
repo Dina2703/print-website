@@ -38,11 +38,7 @@ const SectionAbout = () => {
           <Typography textAlign="center" variant="body2">
             {`Мы предлагаем качественные услуги печати для широкого спектра продуктов, чтобы удовлетворить все потребности вашего бизнеса — от визитных карточек, брошюр, листовок до этикеток и больших баннеров. Что бы вам ни понадобилось напечатать, у нас есть решения для печати, которые помогут вашему бизнесу добиться успеха`}
           </Typography>
-          <MuiNextLink href="/about-us" underline="none">
-            <Button variant="outlined" size="large" sx={{ mt: 2 }}>
-              About Us
-            </Button>
-          </MuiNextLink>
+          <MuiNextLink href="/about-us" underline="none"></MuiNextLink>
         </Grid>
       </Grid>
     </Container>

@@ -35,7 +35,7 @@ const Homepage = () => {
       <SectionAbout />
       <SectionImage imgSrc="/products.jpg" imgAlt="print products" />
       <SectionReview />
-      <SectionImage imgSrc="/hero-bg3.jpg" imgAlt="printed colored papers" />
+
       <Container maxWidth="md" sx={{ my: 15 }}>
         <Grid container spacing={2}>
           <Grid container item justifyContent="center" xs={12} md={4}>

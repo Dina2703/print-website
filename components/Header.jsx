@@ -16,7 +16,6 @@ const Offset = styled("div")(({ theme }) => theme.mixins.toolbar);
 
 export const navLinks = [
   { title: `главная`, path: `/` },
-  { title: `о нас`, path: `/about-us` },
   { title: `прайс-лист`, path: `/menu` },
   { title: `продукция`, path: `/gallery` },
   { title: `контакты`, path: `/contact` },
@@ -35,14 +34,7 @@ const Header = () => {
               <IconButton edge="start" aria-label="home">
                 <MuiNextLink activeClassName="active" href="/">
                   <Grid container alignItems="baseline">
-                    <Grid item>
-                      <Home
-                        sx={{
-                          color: (theme) => theme.palette.common.white,
-                        }}
-                        fontSize="large"
-                      />
-                    </Grid>
+                    <Grid item></Grid>
                     <Grid alignSelf="center">
                       <Typography
                         variant="h5"
@@ -50,7 +42,7 @@ const Header = () => {
                         component="span"
                         gutterBottom
                       >
-                        Yasmina Print
+                        Brand name
                       </Typography>
                     </Grid>
                   </Grid>
