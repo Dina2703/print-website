@@ -16,8 +16,8 @@ const Offset = styled("div")(({ theme }) => theme.mixins.toolbar);
 
 export const navLinks = [
   { title: `главная`, path: `/` },
-  { title: `прайс-лист`, path: `/menu` },
-  { title: `продукция`, path: `/gallery` },
+  { title: `прайс-лист`, path: `/price` },
+  { title: `продукция`, path: `/products` },
   { title: `контакты`, path: `/contact` },
 ];
 
@@ -28,7 +28,7 @@ const Header = () => {
         <AppBar position="fixed">
           <Toolbar>
             <Container
-              maxWidth="lg"
+              maxWidth="md"
               sx={{ display: `flex`, justifyContent: `space-between` }}
             >
               <IconButton edge="start" aria-label="home">

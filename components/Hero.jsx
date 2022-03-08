@@ -39,8 +39,9 @@ const Hero = ({ imgSrc, imgAlt, title, subtitle }) => {
             gutterBottom
             sx={{
               color: "secondary.main",
-              fontWeight: 500,
+              fontWeight: { xs: 400, sm: 500 },
               letterSpacing: 2,
+              fontSize: { xs: 30, sm: 60 },
             }}
           >
             {title}
