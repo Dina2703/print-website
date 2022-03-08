@@ -6,8 +6,8 @@ import MuiNextLink from "../components/MuiNextLink";
 
 const Footer = () => {
   return (
-    <Box component="footer" sx={{ py: 5, bgcolor: "primary.main" }}>
-      <Stack direction="row" justifyContent="center" spacing={4} sx={{ mb: 5 }}>
+    <Box component="footer" sx={{ py: 3, bgcolor: "primary.main" }}>
+      <Stack direction="row" justifyContent="center" spacing={4} sx={{ mb: 3 }}>
         <MuiNextLink
           sx={{ textDecoration: "none", color: "common.white" }}
           href="https://YourFacebookLink/"
