@@ -5,9 +5,9 @@ import ShanenReview from "./ReviewCard/Shanen";
 
 const SectionReview = () => {
   return (
-    <Container maxWidth="md" sx={{ my: 15 }}>
+    <Container maxWidth="md" sx={{ my: 10 }}>
       <Typography variant="h2" textAlign="center" sx={{ mb: 10 }}>
-        Customer Review
+        Отзывы наших клиентов
       </Typography>
       <Grid container spacing={2}>
         <Grid container item justifyContent="center" xs={12} sm={6} md={4}>

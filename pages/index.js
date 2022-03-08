@@ -20,13 +20,19 @@ const Homepage = () => {
 
       <Grid
         position="sticky"
-        top="150px"
+        top="70px"
         container
         justifyContent="flex-end"
-        spacing={12}
+        spacing={14}
+        width="102%"
+        zIndex="100"
       >
         <MuiNextLink href="/contact" underline="none">
-          <Button variant="contained" size="large" sx={{ bgcolor: "#20ABFF" }}>
+          <Button
+            variant="contained"
+            sx={{ bgcolor: "#20ABFF" }}
+            style={{ size: { xs: "small", sm: "medium" } }}
+          >
             связаться с нами
           </Button>
         </MuiNextLink>
@@ -35,71 +41,6 @@ const Homepage = () => {
       <SectionAbout />
       <SectionImage imgSrc="/products.jpg" imgAlt="print products" />
       <SectionReview />
-
-      <Container maxWidth="md" sx={{ my: 15 }}>
-        <Grid container spacing={2}>
-          <Grid container item justifyContent="center" xs={12} md={4}>
-            <NavigationCard
-              imgSrc="./bsns-card.jpg"
-              imgAlt="визитные карточки"
-              title="Bизитные карточки"
-              desc="Визитные карточки обеспечивают запоминающийся способ связи с другими. Выберите из множества размеров и форм и добавьте свой индивидуальный штрих."
-              pagePath="./визитки"
-              ctaText="подробнее"
-            />
-          </Grid>
-          <Grid container item justifyContent="center" xs={12} md={4}>
-            <NavigationCard
-              imgSrc="/calendars.jpg"
-              imgAlt="календари"
-              title="Kалендари"
-              desc="Открытки и открытки отлично подходят для продвижения вашего бизнеса. Отправьте свое сообщение с индивидуальным дизайном и полноцветной печатью на карточках различных размеров."
-              pagePath="./календари"
-              ctaText="подробнее"
-            />
-          </Grid>
-          <Grid container item justifyContent="center" xs={12} md={4}>
-            <NavigationCard
-              imgSrc="/flyers.jpg"
-              imgAlt="флаеры"
-              title="Флаеры"
-              desc="Флаеры — недорогой и эффективный способ рекламы вашего бренда. Рекламируйте свое следующее мероприятие или запуск продукта с помощью привлекательных полноцветных листовок."
-              pagePath="./флаеры"
-              ctaText="подробнее"
-            />
-          </Grid>
-          <Grid container item justifyContent="center" xs={12} md={4}>
-            <NavigationCard
-              imgSrc="/ballons2.jpg"
-              imgAlt="надувные шары"
-              title="Hадувные шары"
-              desc="Центральные украшения из воздушных шаров наполнят вашу вечеринку причудливым наслаждением."
-              pagePath="./шары"
-              ctaText="подробнее"
-            />
-          </Grid>
-          <Grid container item justifyContent="center" xs={12} md={4}>
-            <NavigationCard
-              imgSrc="/banner.jpg"
-              imgAlt="вывески и баннеры"
-              title="Баннеры"
-              desc="Выделите свой бизнес с помощью широкоформатной печати. Баннеры для внутреннего и наружного использования"
-              pagePath="./баннеры"
-              ctaText="подробнее"
-            />
-          </Grid>
-          <Grid container item justifyContent="center" xs={12} md={4}>
-            <NavigationCard
-              imgSrc="/invit-cards.jpg"
-              imgAlt="пригласительные открытки"
-              title="Пригласительные открытки"
-              desc="Выделите свой бизнес с помощью широкоформатной печати. Баннеры для внутреннего и наружного использования"
-              pagePath="./баннеры"
-              ctaText="подробнее"
-            />
-          </Grid>
-        </Grid>
-      </Container>
     </>
   );
 };
