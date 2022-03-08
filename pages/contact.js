@@ -16,7 +16,7 @@ function Contact() {
   return (
     <>
       <CssBaseline />
-      <Container maxWidth="md" sx={{ height: "100%" }}>
+      <Container maxWidth="md" xs={{ height: "100%" }}>
         <Box mt={6}>
           <Typography variant="h4" color="secondary" gutterBottom>
             Обратная cвязь
