@@ -11,7 +11,6 @@ import MuiNextLink from "../components/MuiNextLink";
 const Homepage = () => {
   return (
     <>
-      <Container maxWidth="sm"></Container>
       <Hero
         imgSrc="/hero-bg3.jpg"
         imgAlt="typography letters"
