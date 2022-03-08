@@ -9,8 +9,8 @@ import MuiNextLink from "./MuiNextLink";
 const NavigationCard = ({ imgSrc, imgAlt, title, desc, pagePath, ctaText }) => {
   return (
     <Card sx={{ maxWidth: 320 }}>
-      <CardMedia sx={{ height: 240 }} image={imgSrc} title={imgAlt} />
-      <CardContent sx={{ height: 300 }}>
+      <CardMedia sx={{ height: 220 }} image={imgSrc} title={imgAlt} />
+      <CardContent sx={{ height: { xs: 225, sm: 300 } }}>
         <Typography component="h3" variant="h5" gutterBottom>
           {title}
         </Typography>
