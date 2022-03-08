@@ -10,7 +10,7 @@ const Hero = ({ imgSrc, imgAlt, title, subtitle }) => {
       container
       sx={{
         position: "relative",
-        height: "40vh",
+        height: "50vh",
         width: "100vw",
         overflow: "hidden",
         zIndex: -100,
