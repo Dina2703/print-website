@@ -38,10 +38,11 @@ const Hero = ({ imgSrc, imgAlt, title, subtitle }) => {
             align="center"
             gutterBottom
             sx={{
-              color: "secondary.main",
-              fontWeight: { xs: 400, sm: 500 },
+              color: "common.white",
+              fontWeight: 500,
               letterSpacing: 2,
               fontSize: { xs: 30, sm: 60 },
+              textTransform: "uppercase",
             }}
           >
             {title}
