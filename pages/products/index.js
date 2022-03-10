@@ -4,13 +4,14 @@ import { Typography } from "@mui/material";
 import Link from "next/link";
 import NavigationCard from "../../components/NavigationCard";
 import Hero from "../../components/Hero";
+import { products } from "../../data";
 
-const products = [
-  { name: "product-1" },
-  { name: "product-2" },
-  { name: "product-3" },
-  { name: "product-4" },
-];
+// const products = [
+//   { name: "product-1" },
+//   { name: "product-2" },
+//   { name: "product-3" },
+//   { name: "product-4" },
+// ];
 
 function Catalog() {
   return (
@@ -87,13 +88,13 @@ function Catalog() {
 
       {products.map((product) => {
         return (
-          <div key={product.name}>
+          <div key={product.id}>
             <Link
-              as={"/products/" + product.name}
+              as={"/products/" + product.title}
               href="/products/[product]"
               passHref={true}
             >
-              <button>{product.name}</button>
+              <button>{product.title}</button>
             </Link>
           </div>
         );
