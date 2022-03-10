@@ -6,7 +6,15 @@ import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
 import MuiNextLink from "./MuiNextLink";
 
-const NavigationCard = ({ imgSrc, imgAlt, title, desc, pagePath, ctaText }) => {
+const NavigationCard = ({
+  imgSrc,
+  imgAlt,
+  title,
+  desc,
+  pagePath,
+  linkAs,
+  ctaText,
+}) => {
   return (
     <Card sx={{ maxWidth: 320 }}>
       <CardMedia sx={{ height: 220 }} image={imgSrc} title={imgAlt} />
@@ -19,7 +27,7 @@ const NavigationCard = ({ imgSrc, imgAlt, title, desc, pagePath, ctaText }) => {
         </Typography>
       </CardContent>
       <CardActions>
-        <MuiNextLink href={pagePath} underline="none">
+        <MuiNextLink href={pagePath} linkAs={linkAs} underline="none">
           <Button variant="contained" size="small" sx={{ mb: 2 }}>
             {ctaText}
           </Button>
