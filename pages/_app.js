@@ -18,14 +18,7 @@ export default function MyApp(props) {
   return (
     <CacheProvider value={emotionCache}>
       <Head>
-        <title>
-          <a href="https://www.fontspace.com/category/logo">
-            <img
-              src="https://see.fontimg.com/api/renderfont4/8Ma60/eyJyIjoiZnMiLCJoIjo5OCwidyI6MjAwMCwiZnMiOjQ5LCJmZ2MiOiIjQ0NFNkU3IiwiYmdjIjoiIzQ1M0UzRSIsInQiOjF9/WWFzbWluYSBwcmludA/aquire-bold.png"
-              alt="Logo fonts"
-            />
-          </a>
-        </title>
+        <title></title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <ThemeProvider theme={theme}>
