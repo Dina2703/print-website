@@ -7,6 +7,7 @@ import SectionReview from "../components/SectionReview";
 import NavigationCard from "../components/NavigationCard";
 import { Box, Button } from "@mui/material";
 import MuiNextLink from "../components/MuiNextLink";
+import HeroBtn from "../components/HeroBtn";
 
 const Homepage = () => {
   return (
@@ -16,27 +17,7 @@ const Homepage = () => {
         imgAlt="typography letters"
         title="Полиграфические услуги"
       />
-
-      <Grid
-        position="sticky"
-        top="70px"
-        container
-        justifyContent="flex-end"
-        spacing={14}
-        width="102%"
-        zIndex="100"
-      >
-        <MuiNextLink href="/contact" underline="none">
-          <Button
-            variant="contained"
-            sx={{ bgcolor: "#20ABFF" }}
-            style={{ size: { xs: "small", sm: "medium" } }}
-          >
-            связаться с нами
-          </Button>
-        </MuiNextLink>
-      </Grid>
-
+      <HeroBtn />
       <SectionAbout />
       <SectionImage imgSrc="/products.jpg" imgAlt="print products" />
       <SectionReview />
