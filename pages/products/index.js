@@ -40,20 +40,6 @@ function Catalog() {
           })}
         </Grid>
       </Container>
-
-      {products.map((product) => {
-        return (
-          <div key={product.id}>
-            <Link
-              as={"/products/" + product.title}
-              href="/products/[product]"
-              passHref={true}
-            >
-              <button>{product.title}</button>
-            </Link>
-          </div>
-        );
-      })}
     </div>
   );
 }
