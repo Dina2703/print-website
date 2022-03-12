@@ -11,6 +11,7 @@ import HideOnScroll from "./HideOnScroll";
 import Fab from "@mui/material/Fab";
 import KeyboardArrowUp from "@mui/icons-material/KeyboardArrowUp";
 import BackToTop from "./BackToTop";
+import Meta from "./Meta";
 
 const Offset = styled("div")(({ theme }) => theme.mixins.toolbar);
 
@@ -24,6 +25,7 @@ export const navLinks = [
 const Header = () => {
   return (
     <>
+      <Meta />
       <HideOnScroll>
         <AppBar position="fixed">
           <Toolbar>

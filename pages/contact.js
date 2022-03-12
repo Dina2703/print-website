@@ -11,10 +11,12 @@ import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import { WhatsApp } from "@mui/icons-material";
 import MuiNextLink from "../components/MuiNextLink";
+import Meta from "../components/Meta";
 
 function Contact() {
   return (
     <>
+      <Meta title="контакты" />
       <CssBaseline />
       <Container maxWidth="md" xs={{ height: "100%" }}>
         <Box mt={6}>

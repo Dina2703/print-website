@@ -2,10 +2,12 @@ import { Container, Typography } from "@mui/material";
 import Hero from "../components/Hero";
 import { Box } from "@mui/material";
 import Image from "next/image";
+import Meta from "../components/Meta";
 
 function PriceList() {
   return (
-    <div>
+    <>
+      <Meta title="прайс-лист" />
       <Hero imgSrc="/hero-main.jpg" imgAlt="pricing" title="Прайс лист" />
       <Box
         component="section"
@@ -25,7 +27,7 @@ function PriceList() {
           height={500}
         />
       </Box>
-    </div>
+    </>
   );
 }
 

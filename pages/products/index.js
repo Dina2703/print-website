@@ -5,10 +5,12 @@ import Link from "next/link";
 import NavigationCard from "../../components/NavigationCard";
 import Hero from "../../components/Hero";
 import { products } from "../../data";
+import Meta from "../../components/Meta";
 
 function Catalog() {
   return (
     <div>
+      <Meta title="продукция" />
       <Hero
         imgSrc="/products.jpg"
         imgAlt="printing products"
