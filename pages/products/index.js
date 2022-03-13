@@ -40,15 +40,7 @@ function Catalog({ products }) {
                 md={4}
                 key={product.id}
               >
-                <NavigationCard
-                  imgSrc={product.img}
-                  imgAlt={product.imgAlt}
-                  title={product.title}
-                  desc={product.desc}
-                  pagePath="/product/[id]"
-                  linkAs={`/product/${product.id}`}
-                  ctaText="подробнее"
-                />
+                <NavigationCard product={product} />
               </Grid>
             );
           })}
