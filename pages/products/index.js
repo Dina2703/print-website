@@ -6,8 +6,20 @@ import NavigationCard from "../../components/NavigationCard";
 import Hero from "../../components/Hero";
 import { products } from "../../data";
 import Meta from "../../components/Meta";
+import { server } from "../../config";
 
-function Catalog() {
+export const getStaticProps = async () => {
+  const res = await fetch(`${server}/api/products`);
+  const products = await res.json();
+
+  return {
+    props: {
+      products,
+    },
+  };
+};
+
+function Catalog({ products }) {
   return (
     <div>
       <Meta title="продукция" />
@@ -33,8 +45,8 @@ function Catalog() {
                   imgAlt={product.imgAlt}
                   title={product.title}
                   desc={product.desc}
-                  pagePath="/products/[product]"
-                  linkAs={"/products/" + product.title}
+                  pagePath="/product/[id]"
+                  linkAs={`/product/${product.id}`}
                   ctaText="подробнее"
                 />
               </Grid>
