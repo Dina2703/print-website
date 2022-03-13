@@ -8,8 +8,10 @@ import NavigationCard from "../components/NavigationCard";
 import { Box, Button } from "@mui/material";
 import MuiNextLink from "../components/MuiNextLink";
 import HeroBtn from "../components/HeroBtn";
+import { server } from "../config";
 
-const Homepage = () => {
+const Homepage = ({ products }) => {
+  console.log(products);
   return (
     <>
       <Hero
@@ -26,3 +28,14 @@ const Homepage = () => {
 };
 
 export default Homepage;
+
+export const getStaticProps = async () => {
+  const res = await fetch(`${server}/api/products`);
+  const products = await res.json();
+
+  return {
+    props: {
+      products,
+    },
+  };
+};
