@@ -14,12 +14,7 @@ function product({ product }) {
           maxWidth="md"
           sx={{ mb: 6, mt: 4, height: "70vh" }}
         >
-          <Product
-            imgSrc={product.img}
-            imgAlt={product.imgAlt}
-            title={product.title}
-            subtitle={product.desc}
-          />
+          <Product product={product} />
         </Container>
       </div>
     </>

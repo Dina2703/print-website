@@ -3,7 +3,7 @@ import { Box } from "@mui/system";
 import Image from "next/image";
 import MuiNextLink from "./MuiNextLink";
 
-export const Product = ({ imgSrc, imgAlt, title, subtitle }) => {
+export const Product = ({ product }) => {
   return (
     <>
       <Grid
@@ -18,8 +18,8 @@ export const Product = ({ imgSrc, imgAlt, title, subtitle }) => {
         }}
       >
         <Image
-          src={imgSrc}
-          alt={imgAlt}
+          src={product.img}
+          alt={product.imgAlt}
           layout="fill"
           objectFit="cover"
           priority
@@ -45,7 +45,7 @@ export const Product = ({ imgSrc, imgAlt, title, subtitle }) => {
                 textTransform: "uppercase",
               }}
             >
-              {title}
+              {product.title}
             </Typography>
           </Grid>
         </Grid>
@@ -57,7 +57,7 @@ export const Product = ({ imgSrc, imgAlt, title, subtitle }) => {
           component="p"
           color="text.secondary"
         >
-          {subtitle}
+          {product.desc}
         </Typography>
       </Box>
 
