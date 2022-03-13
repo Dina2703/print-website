@@ -18,7 +18,7 @@ function Contact() {
     <>
       <Meta title="контакты" />
       <CssBaseline />
-      <Container maxWidth="md" xs={{ height: "100%" }}>
+      <Container maxWidth="md" sx={{ minHeight: "70vh" }}>
         <Box mt={6}>
           <Typography variant="h4" color="secondary" gutterBottom>
             Обратная cвязь
